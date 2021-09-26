@@ -1,0 +1,33 @@
+@API = http://localhost:4000
+
+
+GET {{API}}/videos
+
+###
+
+GET {{API}}/videos/61508710ff91380f00319ceb
+
+### Create a video
+
+POST {{API}}/videos
+Content-Type: application/json
+
+{
+   "title": "brawlhalla patch notes 5.11",
+   "description": "this is a brawlhalla patch notes 5.11 video",
+   "url": "https://www.youtube.com/watch?v=roIxebtHXUQ"
+}
+
+###
+
+DELETE {{API}}/videos/6150839705baae00d8d10477
+
+###
+
+PUT {{API}}/videos/61508710ff91380f00319ceb
+Content-Type: application/json
+
+{
+   "title": "Brawlhalla 5.11",
+   "description": "BH notes 5.11"
+}
