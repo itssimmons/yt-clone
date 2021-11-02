@@ -1,2 +1,2 @@
-# videos.mern
-simple add video url using MERN Techs
+# YouTube CLONE
+YouTube clone using MERN techs
