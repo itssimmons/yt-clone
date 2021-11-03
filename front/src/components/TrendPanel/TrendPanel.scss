@@ -1,0 +1,87 @@
+@import "../../utility";
+$height-bar: 3.5rem;
+
+.trend__wrapper {
+	position: relative;
+	display: grid;
+	align-items: center;
+	grid-auto-flow: column;
+	grid-auto-columns: max-content;
+	gap: 10px;
+	padding-inline: 25px;
+	height: $height-bar;
+	border-bottom: $border;
+	border-top: $border;
+
+	.trend__item {
+		background: rgba(0, 0, 0, .05);
+		color: #030303;
+		font-size: .875rem;
+		border-radius: 16px;
+		border: $border;
+		padding: 8px 12px;
+		cursor: pointer;
+	}
+	.active-trend {
+		background: #030303;
+		border-color: #030303;
+		color: #fff;
+		cursor: pointer;
+	}
+}
+
+
+.right__arrow,
+.left__arrow {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+
+	.wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		height: $height-bar;
+		width: $height-bar;
+		background: #fff;
+	}
+}
+
+.right__arrow {
+	right: 0;
+
+	&:before {
+		content: "";
+		height: $height-bar;
+		width: $height-bar - .2rem;
+		background: linear-gradient(to left, #fff 40%, transparent 60%);
+	}
+}
+.left__arrow {
+	left: 0;
+
+	&:after {
+		content: "";
+		height: $height-bar;
+		width: $height-bar - .2rem;
+		background: linear-gradient(to right, #fff 40%, transparent 60%);
+	}
+}
+
+.arrows {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	cursor: pointer;
+
+	svg {
+		height: 1rem;
+		width: 1rem;
+	}
+}
