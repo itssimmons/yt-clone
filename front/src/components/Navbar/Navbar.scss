@@ -59,19 +59,14 @@ ul {
 	}
 	.logo__wrapper {
 
-		.logo {
-			width: 90px;
-			position: relative;
-
-		}
 		:nth-child(2) {
 			text-decoration: none;
 			color: #606060;
-			font-size: .75rem;
+			font-size: .55rem;
 			font-weight: 400;
 			position: absolute;
 			margin-left: 2px;
-			top: 10px;
+			top: 12px;
 
 		}
 	}

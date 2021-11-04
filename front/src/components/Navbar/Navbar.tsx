@@ -6,11 +6,11 @@ import AppsYtIcon from '../Icons/AppsYtIcon/AppsYtIcon'
 import NotiIcon from '../Icons/NotiIcon/NotiIcon'
 import STTIcon from '../Icons/STTIcon/STTIcon'
 
-import logo from '../../assets/icon.png'
 import profile from '../../assets/profile-pic.jpg'
 
 import './Navbar.scss'
 import '../Icons/Icons.scss'
+import Logo from '../Icons/Logo/Logo'
 
 const SearchIcon = (
 	<svg
@@ -38,7 +38,7 @@ const Navbar = () => {
 						<MenuIcon />
 
 						<Link className="logo__wrapper" to="/">
-							<img src={logo} alt="" className="logo" />
+							<Logo />
 							<span>COPY</span>
 						</Link>
 					</li>
